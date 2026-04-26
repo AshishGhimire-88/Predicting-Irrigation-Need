@@ -106,10 +106,10 @@ The tuned Random Forest achieved near-identical performance on both validation a
 - **External Validation:** Test the model on real-world agricultural datasets to assess generalizability beyond this synthetic Kaggle dataset
 
 ## Overview of Files in Repository
-├── Documentation.ipynb   # Full project implementation: EDA, preprocessing,
-│                         # modeling, evaluation, and Kaggle submission
-├── submission.csv        # Generated Kaggle submission file (tuned model)
-└── Dataset/              # Download train.csv and test.csv from Kaggle (link below)
+├── Documentation.ipynb   # Full project implementation: EDA, preprocessing,  
+│                         # modeling, evaluation, and Kaggle submission    
+├── submission.csv        # Generated Kaggle submission file (tuned model)  
+└── Dataset/              # Download train.csv and test.csv from Kaggle (link below)  
 
 ## How to Reproduce Results & Software Setup
 To reproduce the results, run `Documentation.ipynb` from top to bottom. It walks through the full pipeline — from data loading to cleaning, visualization, modeling, evaluation, and submission file generation.
