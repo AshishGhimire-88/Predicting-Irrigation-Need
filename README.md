@@ -1,6 +1,7 @@
 <p align="center">
   <img src="UTA_DataScience_Logo.png" width="200"/>
 </p>
+
 # Predicting Irrigation Need using Multi-Class ML Models
 This project uses machine learning to predict the irrigation need level of agricultural fields (Low, Medium, or High) using environmental and agronomic features from a Kaggle tabular dataset.
 
