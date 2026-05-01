@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="UTA_DataScience_Logo.png" width="200"/>
+  <img src="images/UTA_DataScience_Logo.png" width="200"/>
 </p>
 
 # Predicting Irrigation Need using Multi-Class ML Models
@@ -100,6 +100,10 @@ Model training was performed using Python with scikit-learn in a Jupyter Noteboo
 The irrigation dataset was clean, well-structured, and required no imputation or duplicate removal. The primary challenge was class imbalance in the target variable, which was addressed by setting `class_weight='balanced'`.
 
 EDA identified `Soil_Moisture` and `Temperature_C` as the strongest individual predictors, which were confirmed by the model's feature importance rankings after training. `Crop_Growth_Stage` emerged as the most important categorical feature.
+
+<p align="center">
+  <img src="images/feature_importance.png" width="500"/>
+</p>
 
 The tuned Random Forest achieved near-identical performance on both validation and test sets (~98.58% F1), confirming strong generalization with no overfitting. The model's primary weakness is a small number of `Low` cases misclassified as `High`, which could be addressed by tuning the threshold or additional feature engineering.
 
