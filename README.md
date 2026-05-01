@@ -96,9 +96,10 @@ Model training was performed using Python with scikit-learn in a Jupyter Noteboo
 | Attempt | Model | Score |
 |---------|-------|-------|
 | 1 | Random Forest (default params) | 0.95290 |
-| 2 | Random Forest (tuned) | 0.95798 |
+| 2 | Random Forest (tuned) | 0.96108 |
 
-**Best Score:** 0.95798 (Balanced Accuracy) — **Top 17%** out of 6,864 entrants
+**Best Score:** 0.96108 (Balanced Accuracy)
+**Public Score:** 0.95798 (Balanced Accuracy)
 
 ### Conclusions
 The irrigation dataset was clean, well-structured, and required no imputation or duplicate removal. The primary challenge was class imbalance in the target variable, which was addressed by setting `class_weight='balanced'`.
