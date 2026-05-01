@@ -21,7 +21,8 @@ EDA revealed that Soil Moisture and Temperature were the strongest predictors, s
 - **Output:** Multi-class label (`Irrigation_Need`) — Low, Medium, or High  
 <p align="center">
   <img src="images/class_distribution.png" width="500"/>
-</p>   
+</p> 
+
 - **Size:** 630,000 records with 21 features
 - **Split:**
   - 70% for training (441,000 samples)
