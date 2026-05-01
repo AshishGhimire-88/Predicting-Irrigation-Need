@@ -10,7 +10,7 @@ The goal of this project is to predict the irrigation needs of agricultural fiel
 
 A key challenge was significant class imbalance — the High class represented only 3.33% of records. This was addressed using `class_weight='balanced'` in the Random Forest classifier, which penalizes misclassification of minority classes more heavily during training without altering the dataset itself.
 
-EDA revealed that Soil Moisture and Temperature were the strongest predictors, showing clear class separation, while most other features showed heavy overlap. This was later confirmed by the model's feature importance rankings. The final tuned Random Forest achieved a Kaggle Balanced Accuracy score of 0.95798, placing in the **Top 17%** out of 6,864 entrants.
+EDA revealed that Soil Moisture and Temperature were the strongest predictors, showing clear class separation, while most other features showed heavy overlap. This was later confirmed by the model's feature importance rankings. The final tuned Random Forest achieved a Kaggle Balanced Accuracy score of 0.96108, placing in the **Top 18%** out of 6,864 entrants.
 
 ## Summary of Work Done
 
