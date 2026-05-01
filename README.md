@@ -98,7 +98,7 @@ Model training was performed using Python with scikit-learn in a Jupyter Noteboo
 | 1 | Random Forest (default params) | 0.95290 |
 | 2 | Random Forest (tuned) | 0.96108 |
 
-**Best Score:** 0.96108 (Balanced Accuracy)
+**Best Score:** 0.96108 (Balanced Accuracy)  
 **Public Score:** 0.95798 (Balanced Accuracy)
 
 ### Conclusions
