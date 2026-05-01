@@ -18,7 +18,10 @@ EDA revealed that Soil Moisture and Temperature were the strongest predictors, s
 - **Type:** CSV file from Kaggle
 - **Input:** Environmental and agronomic features including Soil Moisture, Temperature, 
   Rainfall, Crop Type, Soil Type, Crop Growth Stage, and more
-- **Output:** Multi-class label (`Irrigation_Need`) — Low, Medium, or High
+- **Output:** Multi-class label (`Irrigation_Need`) — Low, Medium, or High  
+<p align="center">
+  <img src="images/class_distribution.png" width="500"/>
+</p>   
 - **Size:** 630,000 records with 21 features
 - **Split:**
   - 70% for training (441,000 samples)
