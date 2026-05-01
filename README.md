@@ -102,7 +102,7 @@ The irrigation dataset was clean, well-structured, and required no imputation or
 EDA identified `Soil_Moisture` and `Temperature_C` as the strongest individual predictors, which were confirmed by the model's feature importance rankings after training. `Crop_Growth_Stage` emerged as the most important categorical feature.
 
 <p align="center">
-  <img src="images/feature_importance.png" width="500"/>
+  <img src="images/Feature_Importance.png" width="500"/>
 </p>
 
 The tuned Random Forest achieved near-identical performance on both validation and test sets (~98.58% F1), confirming strong generalization with no overfitting. The model's primary weakness is a small number of `Low` cases misclassified as `High`, which could be addressed by tuning the threshold or additional feature engineering.
