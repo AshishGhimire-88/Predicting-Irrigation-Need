@@ -18,11 +18,7 @@ EDA revealed that Soil Moisture and Temperature were the strongest predictors, s
 - **Type:** CSV file from Kaggle
 - **Input:** Environmental and agronomic features including Soil Moisture, Temperature, 
   Rainfall, Crop Type, Soil Type, Crop Growth Stage, and more
-- **Output:** Multi-class label (`Irrigation_Need`) — Low, Medium, or High  
-<p align="center">
-  <img src="images/class_distribution.png" width="500"/>
-</p> 
-
+- **Output:** Multi-class label (`Irrigation_Need`) — Low, Medium, or High   
 - **Size:** 630,000 records with 21 features
 - **Split:**
   - 70% for training (441,000 samples)
@@ -36,23 +32,42 @@ EDA revealed that Soil Moisture and Temperature were the strongest predictors, s
 - No outliers were detected using the IQR method
 - The `id` column was dropped as it has no predictive value
 - Feature scaling was applied using `StandardScaler` on all numeric features
+  <p align="center">
+  <img src="images/Scaling_Demonstration.png" width="700"/>
+  </p>  
 - One-hot encoding was applied to all categorical features via `OneHotEncoder.`
 - All preprocessing was handled inside a scikit-learn `Pipeline` to prevent data leakage
 
 ### Data Visualization
-Density histograms were plotted for each numeric feature to examine raw distributions. 
+
+Density histograms were plotted for each numeric feature to examine raw distributions.
 Key observations:
 - No features are normally distributed — uniform or irregular distributions dominate
 - `Rainfall_mm` is the only notably skewed feature (left-skewed)
 - Feature ranges vary drastically, confirming the need for scaling
 
-Class-separated histograms and box plots were generated for each numeric feature against the `Irrigation_Need` target:
-- `Soil_Moisture` and `Temperature_C` showed the clearest and most consistent class separation across all three irrigation levels
+<p align="center">
+  <img src="images/Density_Plots_Numeric.png" width="800"/>
+</p>
+
+Class-separated histograms and box plots were generated for each numeric feature 
+against the `Irrigation_Need` target:
+- `Soil_Moisture` and `Temperature_C` showed the clearest and most consistent class 
+  separation across all three irrigation levels
 - `Rainfall_mm` showed moderate discriminating power, particularly for the High class
 - Most other features showed heavy class overlap
 
+<p align="center">
+  <img src="images/Class_Separated_Density_Plots_Numeric.png" width="800"/>
+</p>
+
+<p align="center">
+  <img src="images/Correlation_Heatmap.png" width="700"/>
+</p>
+
 Row-normalized cross-tabulation tables were used for categorical features:
-- `Crop_Growth_Stage` and `Mulching_Used` showed the strongest variation across irrigation classes
+- `Crop_Growth_Stage` and `Mulching_Used` showed the strongest variation across 
+  irrigation classes
 - Other categorical features showed near-uniform distributions across classes
 
 ### Problem Formulation
