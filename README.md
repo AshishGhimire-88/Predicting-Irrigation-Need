@@ -31,7 +31,7 @@ EDA revealed that Soil Moisture and Temperature were the strongest predictors, s
 - No duplicate rows were present
 - No outliers were detected using the IQR method
 - The `id` column was dropped as it has no predictive value
-- Feature scaling was applied using `StandardScaler` on all numeric features
+- Feature scaling was applied using `StandardScaler` on all numeric features. Below is a **sample** showing the data before and after scaling.
   <p align="center">
   <img src="images/Scaling_Demonstration.png" width="700"/>
   </p>  
