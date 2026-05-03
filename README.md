@@ -137,7 +137,8 @@ The tuned Random Forest achieved near-identical performance on both validation a
 ├── Documentation.ipynb   # Full project implementation: EDA, preprocessing,  
 │                         # modeling, evaluation, and Kaggle submission    
 ├── submission.csv        # Generated Kaggle submission file (tuned model)  
-└── Dataset/              # Download train.csv and test.csv from Kaggle (link below)  
+└── Dataset/              # Download train.csv and test.csv from Kaggle (link below) 
+└── images/               # Generated plots: visuals from EDA, feature analysis, and model evaluation
 
 ## How to Reproduce Results & Software Setup
 To reproduce the results, run `Documentation.ipynb` from top to bottom. It walks through the full pipeline — from data loading to cleaning, visualization, modeling, evaluation, and submission file generation.
